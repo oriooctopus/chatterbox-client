@@ -1,5 +1,7 @@
 // jQuery utility functions to update Chatterbox index.html
-
-$('#send .submit').on('click', function() {
-  app.handleSubmit();
+$(function() {
+  app.init();
+  $('.submit').on('click', function() {
+    app.handleSubmit();
+  });
 });
