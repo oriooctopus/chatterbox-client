@@ -4,10 +4,14 @@
     <meta charset="utf-8">
     <title>chatterbox</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <!-- CSS STYLE MAIN -->
 
     <!-- dependencies -->
     <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/underscore/underscore.js"></script>
     <script>
+
+
       // YOU DO NOT NEED TO EDIT THIS CODE
       if (!/(&|\?)username=/.test(window.location.search)) {
         var newSearch = window.location.search;
@@ -25,8 +29,20 @@
   <body>
     <div id="main">
       <h1>chatterbox</h1>
-      <!-- Your HTML goes here! -->
+      <div id="selectRoom">
+        <select name="rooms">
+          <option value="option1">Volvo</options>
+          <option value="option2">Land Rover</options>
+        </select>
+      </div>
+      <div action="#" id="send" method="post">
+        <input id="messageInput" type="text" placeholder="put message here" />
+        <input name="submit" type="submit" class="submit" />
+      </div>
     </div>
-    <div id="chats"></div>
+    <div id="chats">
+      <!-- chat -->
+    </div>
+    <script src="scripts/chatterbox.js"></script>
   </body>
 </html>
